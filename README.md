@@ -7,13 +7,17 @@ O objetivo deste jogo é que o usuário adivinhe o número sorteado pelo aplicat
 ### Interface do Usuário:
 Ao iniciar o aplicativo, o usuário será apresentado a uma tela com os seguintes elementos:
 
-### Intervalo: Um gráfico ou texto que exibe o intervalo atual entre os números, inicialmente de 1 a 100.
+### Intervalo: 
+Um gráfico ou texto que exibe o intervalo atual entre os números, inicialmente de 1 a 100.
 
-### Entrada de Número: Um campo de entrada onde o usuário pode digitar o número que ele acredita ser o correto.
+### Entrada de Número: 
+Um campo de entrada onde o usuário pode digitar o número que ele acredita ser o correto.
 
-### Botão "Chutar": Um botão que o usuário deve clicar para enviar o número que ele digitou para verificar.
+### Botão "Chutar": 
+Um botão que o usuário deve clicar para enviar o número que ele digitou para verificar.
 
-### Status do Jogo: Uma área na parte inferior da tela que exibe o status atual do jogo.
+### Status do Jogo: 
+Uma área na parte inferior da tela que exibe o status atual do jogo.
 
 ## Regras do Jogo:
 1- O aplicativo gera aleatoriamente um número entre 1 e 100 que o usuário deve adivinhar.
