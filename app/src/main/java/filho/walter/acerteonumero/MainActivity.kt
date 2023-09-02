@@ -2,6 +2,7 @@ package filho.walter.acerteonumero
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         this.buttonChute.setOnClickListener {
             Chute()
         }
+        this.buttonChute.setOnLongClickListener(TrataClickLong())
+
     }
 
     private fun Chute(){
@@ -42,6 +45,19 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, this.intervaloNumeros.getNumeroStatus().toString(),
             Toast.LENGTH_SHORT).show()
     }
+
+    //funcao para resetar aplicação no clicklongo do botao
+    private inner class TrataClickLong : View.OnLongClickListener {
+        override fun onLongClick(v: View?): Boolean {
+            resetar()
+            return true
+        }
+    }
+    private fun resetar(){
+        this.intervaloNumeros = IntervaloNumeros(1, 100)
+        this.updateLayoutInfo()
+    }
+
 
     private fun updateLayoutInfo() {
         this.editTextPalpite.setText("")

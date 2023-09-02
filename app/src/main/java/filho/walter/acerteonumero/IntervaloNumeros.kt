@@ -34,9 +34,6 @@ class IntervaloNumeros(private var min: Int, private var max: Int){
             this.max = numero
             this.numeroStatus = NumeroStatus.MAIOR_QUE_O_SORTEADO
         }
-        else {
-            this.numeroStatus = NumeroStatus.ACERTOU
-        }
     }
 
     private fun fimIntervalo(): Boolean {
@@ -48,10 +45,12 @@ class IntervaloNumeros(private var min: Int, private var max: Int){
             this.status = JogoStatus.PERDEU
         } else if(numero == this.numeroSorteado) {
             this.status = JogoStatus.GANHOU
+            this.numeroStatus = NumeroStatus.ACERTOU
         } else {
             mudarLimites(numero)
             if(fimIntervalo()) {
                 this.status = JogoStatus.PERDEU
+                this.numeroStatus = NumeroStatus.PERDEU
             }
         }
 
@@ -64,5 +63,5 @@ enum class JogoStatus {
 }
 
 enum class NumeroStatus {
-    MAIOR_QUE_O_SORTEADO, MENOR_QUE_O_SORTEADO, ACERTOU
+    MAIOR_QUE_O_SORTEADO, MENOR_QUE_O_SORTEADO, ACERTOU, PERDEU
 }

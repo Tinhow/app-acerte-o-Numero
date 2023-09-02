@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/backgroundimg"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,24 +15,9 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
-
-    <EditText
-        android:id="@+id/editTextPalpite"
-        android:layout_width="262dp"
-        android:layout_height="49dp"
-        android:cursorVisible="false"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintVertical_bias="0.694" />
 
     <TextView
         android:id="@+id/textViewMax"
@@ -45,7 +30,8 @@
         app:layout_constraintHorizontal_bias="0.742"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.309"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textViewMin"
@@ -55,27 +41,79 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.309"
+        tools:ignore="VisualLintOverlap" />
 
     <Button
         android:id="@+id/buttonChute"
-        android:layout_width="265dp"
-        android:layout_height="44dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_width="275dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#673AB7"
         android:backgroundTintMode="screen"
         android:cursorVisible="true"
         android:hapticFeedbackEnabled="false"
         android:text="CHUTE"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         app:cornerRadius="@dimen/cardview_default_radius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718" />
+        app:layout_constraintVertical_bias="0.588"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="272dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Digite o Número"
+        android:textColorHint="#000000"
+        app:boxBackgroundColor="#B188FA"
+        app:boxStrokeColor="#FFFFFF"
+        app:endIconTint="#FFFDFD"
+        app:helperTextTextColor="#000000"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484"
+        app:placeholderTextColor="#FFFFFF"
+        app:prefixTextColor="#FFFFFF"
+        app:startIconTint="#FFFFFF"
+        app:suffixTextColor="#FFFFFF"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPalpite"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:inputType="number|numberDecimal"
+            android:shadowColor="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="245dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/nomejogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
