@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg"
+    android:orientation="vertical"
+    tools:context=".Win_screen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="336dp"
+        android:layout_height="249dp"
+        android:layout_gravity="center"
+        android:background="@drawable/youwin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="301dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:hint="Digite seu Nome"
+        android:textColorHint="#000000"
+        app:boxBackgroundColor="#B188FA"
+        app:boxStrokeColor="#FFFFFF"
+        app:helperTextTextColor="#FBFBFB"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379"
+        app:placeholderTextColor="#FFFFFF"
+        app:prefixTextColor="#FFFFFF"
+        app:startIconTint="#FFFFFF"
+        app:suffixTextColor="#FFFFFF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_win_player_name"
+            android:layout_width="300dp"
+            android:layout_height="59dp"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F8F8F8"
+            android:textColorHint="#F8F8F8"
+            android:textColorLink="#FFFEFE" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_new_game"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:backgroundTint="#673AB7"
+        android:insetTop="0dp"
+        android:text="Novo Jogo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="170dp"
+        android:layout_height="164dp"
+        android:layout_gravity="center"
+        android:src="@drawable/win"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

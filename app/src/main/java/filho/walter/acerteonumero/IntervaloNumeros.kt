@@ -18,6 +18,10 @@ class IntervaloNumeros(private var min: Int, private var max: Int){
         return this.status
     }
 
+    fun setStatus(perdeu: JogoStatus) {
+        this.status = JogoStatus.PERDEU
+    }
+
     fun getNumeroStatus(): NumeroStatus {
         return this.numeroStatus
     }
